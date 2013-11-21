@@ -33,11 +33,20 @@ angular.module('leslieApp')
             'id': id
           },
           'synop': synop,
-          'actors': actors,
-          'awards': awards // awards structure needs to accompany event
+          'actors': actors, // just array
+          'awards': awards
         }
       );
     };
+
+    /*awards object is to be
+      {
+        year: {
+          Awarding body: [awards]
+        }  
+      } 
+
+    */
 
     var moviesEnglish = new MovieCollection();
     moviesEnglish.addMovie(
@@ -48,8 +57,12 @@ angular.module('leslieApp')
       'Teddy boy',
       ['Maggie Cheung', 'Andy Lau', 'Carina Lau', 'Jacky Cheung', 'Tony Leung Chiu-Wai'],
       {
-        1991: ['Best Picture', 'Best Director'],
-        1997: ['Speicla Award']
+        1991: {
+          'Hong Kong Film Awards': ['Best Picture', 'Best Director, Best Actor (Leslie Cheung), Best Art Direction, Best Cinematography']
+        },
+        1997: {
+          'Golden Bauhinia Awawrds': ['Special Award (Best Hong Kong film of last 10 years']
+        }
       }
     );
     moviesEnglish.addMovie(
@@ -60,8 +73,9 @@ angular.module('leslieApp')
       'Mark Goh',
       ['Chow Yun-fat', 'Leslie Cheung', 'Ti Lung'],
       {
-        1991: ['Best Picture', 'Best Director'],
-        1997: ['Speicla Award']
+        1985: {
+          'Hong Kong Film Awards': ['Best Picture']
+        }
       }
     );
 

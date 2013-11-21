@@ -33,7 +33,18 @@
     </div>
     <div class="col-md-4">
       <h3>Awawrds</h3>
-      
+      <!-- For parent divs of nested ng-repeats, use div instead of p -->
+        <div ng-repeat="(year, yearDetails) in currentBelt.awards">
+          <p>{{year}}</p>
+          <div ng-repeat="(awardingBody, awards) in yearDetails">
+            {{awardingBody}}
+            <ul>
+              <li ng-repeat="award in awards">
+                {{award}}
+              </li>
+            </ul>
+          </div>
+        </div>
     </div>
   </div>
 
