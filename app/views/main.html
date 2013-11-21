@@ -10,7 +10,7 @@
 
   <div class="jumbotron">
     <div ng-repeat="movies in moviesEnglish">
-      <div class="belt-item" ng-repeat="movie in movies" ng-click="clickHandler(movie)">
+      <div class="belt-item" ng-repeat="movie in movies" ng-click="beltSelectHandler(movie)">
         <img src="{{movie.meta.imgPath}}"/>
         <p class="belt-title">{{movie.meta.title}}</p>
         <p class="belt-year">{{movie.meta.year}}</p>
@@ -32,7 +32,7 @@
       </ul>
     </div>
     <div class="col-md-4">
-      <h3>Awawrds</h3>
+      <h3>Awards</h3>
       <!-- For parent divs of nested ng-repeats, use div instead of p -->
         <div ng-repeat="(year, yearDetails) in currentBelt.awards">
           <p>{{year}}</p>
