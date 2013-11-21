@@ -10,7 +10,7 @@
 
   <div class="jumbotron">
     <div ng-repeat="movies in moviesEnglish">
-      <div class="belt-item" ng-repeat="movie in movies">
+      <div class="belt-item" ng-repeat="movie in movies" ng-click="clickHandler(movie)">
         <img src="{{movie.meta.imgPath}}"/>
         <p class="belt-title">{{movie.meta.title}}</p>
         <p class="belt-year">{{movie.meta.year}}</p>
@@ -19,9 +19,22 @@
   </div>
 
   <div class="row">
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">
+      <h3>Synopsis</h3>
+      {{currentBelt.synop}}
+    </div>
+    <div class="col-md-4">
+      <h3>Actors</h3>
+      <ul>
+        <li ng-repeat="actor in currentBelt.actors">
+          {{actor}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3>Awawrds</h3>
+      
+    </div>
   </div>
 
   <div class="footer">

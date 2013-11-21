@@ -7,7 +7,8 @@ angular.module('leslieApp')
         'meta': {
           'imgPath': '',
           'title': '',
-          'year': ''
+          'year': '',
+          'id': 1
         },
         'synop': '',
         'actors': [''],
@@ -22,17 +23,18 @@ angular.module('leslieApp')
     }
 
     // actors = [], awards = {}
-    MovieCollection.prototype.addMovie = function(title, imgPath, year, synop, actors, awards) {
+    MovieCollection.prototype.addMovie = function(title, imgPath, year, id, synop, actors, awards) {
       this.collection.push(
         {
           'meta': {
             'imgPath': imgPath,
             'title': title,
-            'year': year
+            'year': year,
+            'id': id
           },
           'synop': synop,
           'actors': actors,
-          'awards': awards
+          'awards': awards // awards structure needs to accompany event
         }
       );
     };
@@ -42,6 +44,7 @@ angular.module('leslieApp')
       'Days of Being Wild',
       'images/days-of-being-wild.jpg',
       1990,
+      1,
       'Teddy boy',
       ['Maggie Cheung', 'Andy Lau', 'Carina Lau', 'Jacky Cheung', 'Tony Leung Chiu-Wai'],
       {
@@ -53,6 +56,7 @@ angular.module('leslieApp')
       'A Better Tomorrow',
       'images/a-better-tomorrow.jpg',
       1986,
+      2,
       'Mark Goh',
       ['Chow Yun-fat', 'Leslie Cheung', 'Ti Lung'],
       {
@@ -63,5 +67,13 @@ angular.module('leslieApp')
 
     console.log(moviesEnglish);
     $scope.moviesEnglish = moviesEnglish;
+    //$scope.currentBelt = 1; // this needs to be considered later with proper DB design
+
+    $scope.clickHandler = function(e) {
+      console.log(e);
+      // probably need a scope apply here
+      $scope.currentBelt = e;
+      console.log($scope.currentBelt);
+    };
 
   });
