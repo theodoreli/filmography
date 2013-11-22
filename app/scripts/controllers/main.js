@@ -133,6 +133,7 @@ angular.module('leslieApp')
       }
     );
 
+    $scope.currentBelt = moviesEnglish.collection[0];
     $scope.moviesEnglish = moviesEnglish;
     //$scope.currentBelt = 1; // this needs to be considered later with proper DB design
 

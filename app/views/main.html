@@ -18,17 +18,11 @@
     </div>
   </div>
 
-  <nav id="movie-nav-bar" class="nav navbar navbar-default">
+  <nav id="movie-nav-bar" class="nav navbar navbar-default" scroll-spy>
     <ul class="nav navbar-nav">
-      <li>
-        <a ng-href="#synopsis">Synopsis</a>
-      </li>
-      <li>
-        <a ng-href="#actors">Actors</a>
-      </li>
-      <li>
-        <a ng-href="#awards">Awards</a>
-      </li>
+      <li spy="synopsis">Synopsis</li>
+      <li spy="actors">Actors</li>
+      <li spy="awards">Awards</li>
     </ul>
   </nav>
 
