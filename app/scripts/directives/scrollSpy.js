@@ -1,5 +1,7 @@
 'use strict';
 
+//based off http://alxhill.com/blog/articles/angular-scrollspy/
+// need to contact him regarding my changes. then try uploading my own
 angular.module('leslieApp')
   .directive('scrollSpy', ['$window', function ($window) {
     return {
