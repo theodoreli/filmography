@@ -18,12 +18,29 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-4">
+  <nav id="movie-nav-bar" class="nav navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li>
+        <a ng-href="#synopsis">Synopsis</a>
+      </li>
+      <li>
+        <a ng-href="#actors">Actors</a>
+      </li>
+      <li>
+        <a ng-href="#awards">Awards</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="movie-details-wrapper">
+    <!-- Synopsis -->
+    <div id="synopsis">
       <h3>Synopsis</h3>
       {{currentBelt.synop}}
     </div>
-    <div class="col-md-4">
+
+    <!-- Actors -->
+    <div id="actors">
       <h3>Actors</h3>
       <ul>
         <li ng-repeat="actor in currentBelt.actors">
@@ -31,7 +48,9 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-4">
+
+    <!-- Awards -->
+    <div id="awards">
       <h3>Awards</h3>
       <!-- For parent divs of nested ng-repeats, use div instead of p -->
         <div ng-repeat="(year, yearDetails) in currentBelt.awards">
