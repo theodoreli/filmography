@@ -132,6 +132,19 @@ angular.module('leslieApp')
         }
       }
     );
+    moviesEnglish.addMovie(
+      'A Chinese Ghost Story',
+      'images/a-chinese-ghost-story.jpg',
+      1987,
+      6,
+      'is a 1987 Hong Kong romantic comedy horror film starring Leslie Cheung, Joey Wong, and Wu Ma, directed by Ching Siu-tung, and produced by Tsui Hark. The plot was loosely based on a short story from Qing Dynasty writer Pu Songlings Strange Stories from a Chinese Studio (聊齋誌異), and also inspired by the 1960 Shaw Brothers Studio film The Enchanting Shadow. The film was popular in Hong Kong and several Asian countries, including South Korea and Japan when released. Most notably it boosted the stardom of Joey Wong, won Leslie Cheung popularity in Japan, and sparked a trend of folklore ghost films in the Hong Kong film industry, including two sequels, an animated film, a television series and a 2011 remake.',
+      ['Leslie Cheung', 'Joey Wong', 'Wu Ma'],
+      {
+        1988: {
+          '7Th Hong Kong Film Awards': ['Best Art Directin (Kenneth Yee)', 'Best Original Film Score (Lok Man-tai, James Wong)', 'Best Original Film Song (James Wong, Sally Yeh)']
+        }
+      }
+    );
 
     $scope.currentBelt = moviesEnglish.collection[0];
     $scope.beltInMotion = false;
