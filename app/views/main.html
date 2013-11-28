@@ -11,8 +11,8 @@
   <div class="jumbotron">
   <div id="belt-button-left" ng-click="beltButtonLeftHandler()">Left Button</div>
   <div id="belt-button-right" ng-click="beltButtonRightHandler()">Right Button</div>
-    <div ng-repeat="movies in moviesEnglish" id="belt-wrapper">
-      <div class="belt-item" ng-repeat="movie in movies" ng-click="beltSelectHandler(movie)">
+    <div id="belt-wrapper">
+      <div class="belt-item" ng-repeat="movie in moviesEnglish" ng-click="beltSelectHandler(movie)">
         <img src="{{movie.meta.imgPath}}"/>
         <p class="belt-title">{{movie.meta.title}}</p>
         <p class="belt-year">{{movie.meta.year}}</p>

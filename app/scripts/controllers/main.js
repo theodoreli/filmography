@@ -135,7 +135,7 @@ angular.module('leslieApp')
 
     $scope.currentBelt = moviesEnglish.collection[0];
     $scope.beltInMotion = false;
-    $scope.moviesEnglish = moviesEnglish;
+    $scope.moviesEnglish = moviesEnglish.collection;
     //$scope.currentBelt = 1; // this needs to be considered later with proper DB design
 
     $scope.beltSelectHandler = function(e) {
