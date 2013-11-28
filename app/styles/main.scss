@@ -3,16 +3,28 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 
 // THEOS code
-.jumbotron {
-    position: relative;
+#belt-vert-spacer {
     height: 275px;
 }
 
+#belt-vert-spacer-colorfill {
+    background-color: grey;
+    width: 100%;
+    position: absolute;
+    height: 275px;
+    left: 0;
+    z-index: -1;
+}
 
 #belt-wrapper {
     width: 900px;
-    position: absolute;
-    left: 0px;
+    position: relative;
+}
+
+#belt-button-left {
+}
+
+#belt-button-right {
 }
 
 .belt-item {
