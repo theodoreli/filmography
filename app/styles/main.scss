@@ -3,6 +3,12 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 
 // THEOS code
+#belt-wrapper {
+    width: 900px;
+    position: absolute;
+    left: 0px;
+}
+
 .belt-item {
     display: inline-block;
     img {
@@ -21,6 +27,19 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 .current {
     background-color: red;
+}
+
+.jumbotron {
+    position: relative;
+    height: 275px;
+}
+
+#movie-nav-bar.affix-top {
+}
+
+#movie-nav-bar.affix {
+    position: fixed;
+    top:0px;
 }
 
 /* =============================================================================
@@ -74,7 +93,6 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
     border-bottom: 1px solid #e5e5e5;
 }
 

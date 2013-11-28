@@ -134,6 +134,7 @@ angular.module('leslieApp')
     );
 
     $scope.currentBelt = moviesEnglish.collection[0];
+    $scope.beltInMotion = false;
     $scope.moviesEnglish = moviesEnglish;
     //$scope.currentBelt = 1; // this needs to be considered later with proper DB design
 
@@ -141,6 +142,41 @@ angular.module('leslieApp')
       console.log(e);
       // probably need a scope apply here
       $scope.currentBelt = e;
+    };
+    // may need to call this after render, as it might be height before scope is rendered
+    console.log($('#movie-nav-bar').offset().top);
+    $('#movie-nav-bar').affix({
+      offset: {
+        top: $('#movie-nav-bar').offset().top
+        // top: 800
+      }
+    });
+
+    // using jQuery click handler is NOT the angular way...
+    $scope.beltButtonLeftHandler = function() {
+      if ($scope.beltInMotion) {
+        return;
+      }
+      $scope.beltInMotion = true;
+      $('#belt-wrapper').animate({
+        left: ['-=250', 'swing']
+      }, 1000, function() {
+        $scope.beltInMotion = false
+        console.log('Left animation complete');
+      }) ;
+    };
+
+    $scope.beltButtonRightHandler = function() {
+      if ($scope.beltInMotion) {
+        return;
+      }
+      $scope.beltInMotion = true;
+      $('#belt-wrapper').animate({
+        left: ['+=250', 'swing']
+      }, 1000, function() {
+        $scope.beltInMotion = false
+        console.log('Right animation complete');
+      }) ;
     };
 
   });

@@ -9,7 +9,9 @@
   </div>
 
   <div class="jumbotron">
-    <div ng-repeat="movies in moviesEnglish">
+  <div id="belt-button-left" ng-click="beltButtonLeftHandler()">Left Button</div>
+  <div id="belt-button-right" ng-click="beltButtonRightHandler()">Right Button</div>
+    <div ng-repeat="movies in moviesEnglish" id="belt-wrapper">
       <div class="belt-item" ng-repeat="movie in movies" ng-click="beltSelectHandler(movie)">
         <img src="{{movie.meta.imgPath}}"/>
         <p class="belt-title">{{movie.meta.title}}</p>
@@ -18,13 +20,13 @@
     </div>
   </div>
 
-  <nav id="movie-nav-bar" class="nav navbar navbar-default" scroll-spy>
+  <div id="movie-nav-bar" class="nav navbar navbar-default" scroll-spy>
     <ul class="nav navbar-nav">
       <li spy="synopsis">Synopsis</li>
       <li spy="actors">Actors</li>
       <li spy="awards">Awards</li>
     </ul>
-  </nav>
+  </div>
 
   <div id="movie-details-wrapper">
     <!-- Synopsis -->
