@@ -22,9 +22,54 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 #belt-button-left {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAuCAYAAAAcEfjaAAABV0lEQVRIx+2VsW7CQBBEDwTpIkXICMuyJdtfQsGXQUVFlSpVmjTESOn4BAoXLigsueAvaM2MBAht7g6v06ZYwNK8893ezGLatjV5ni9QO2PMC599ZdI0nWdZdgbQ4vsH0NgLQLSn+FZ4/gY0cgJBELxCdHiEUF+AhlaAH9jWG0SleNOnDbr/iON4AlEloA9AAyvAiqIogPAooHcnwIJghqrFmTZOgJUkSQRRI6C1E7huL8GbTmJ7Ky2w/PuWVIcOw3Daua2qi1NZQ20+i723XnurA/QQ0aJTRJ8J/oEuAFvNqcjWPwV4ibzM66Weeck+8YhTUNhm7xIPaUAhPtCoVjGtLdxbMgK/zsCwMDRi5YrhsnaJcRQrHzkNrW1l0MXKNQeCy95rsXLDUeNK3EqsfOIQ8/0DLVWAeku9Du1rK6ehE1BfnNoavcwn7L3tZO9eARIRLW4RvQA0+6DNwTHW6QAAAABJRU5ErkJggg==);
+    background-position: 0 -26px;
 }
 
 #belt-button-right {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAuCAYAAAAcEfjaAAABV0lEQVRIx+2VsW7CQBBEDwTpIkXICMuyJdtfQsGXQUVFlSpVmjTESOn4BAoXLigsueAvaM2MBAht7g6v06ZYwNK8893ezGLatjV5ni9QO2PMC599ZdI0nWdZdgbQ4vsH0NgLQLSn+FZ4/gY0cgJBELxCdHiEUF+AhlaAH9jWG0SleNOnDbr/iON4AlEloA9AAyvAiqIogPAooHcnwIJghqrFmTZOgJUkSQRRI6C1E7huL8GbTmJ7Ky2w/PuWVIcOw3Daua2qi1NZQ20+i723XnurA/QQ0aJTRJ8J/oEuAFvNqcjWPwV4ibzM66Weeck+8YhTUNhm7xIPaUAhPtCoVjGtLdxbMgK/zsCwMDRi5YrhsnaJcRQrHzkNrW1l0MXKNQeCy95rsXLDUeNK3EqsfOIQ8/0DLVWAeku9Du1rK6ehE1BfnNoavcwn7L3tZO9eARIRLW4RvQA0+6DNwTHW6QAAAABJRU5ErkJggg==);
+    background-position: 0 0;
+}
+
+.belt-button {
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 30px;
+    height: 20px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    left: 0;
+    right: 0;
+}
+
+#belt-button-left-wrapper {
+    border-bottom-right-radius: 36px;
+    border-top-right-radius: 36px;
+    box-shadow: 1px 0 2px rgba(0,0,0,.5);
+    left: 0;
+}
+
+#belt-button-right-wrapper {
+    border-bottom-left-radius: 36px;
+    border-top-left-radius: 36px;
+    box-shadow: -1px 0 2px rgba(0,0,0,.5);
+    right: 0; 
+}
+
+.belt-button-wrapper {
+    background: rgba(255,255,255,.9);
+    -webkit-transition: background 0.15s,opacity 0.5s;
+    -webkit-box-shadow: 1px 0 2px rgba(0,0,0,.5);
+    transition: background 0.15s,opacity 0.5s;
+    cursor: pointer;
+    height: 72px;
+    position: absolute;
+    width: 36px;
+    z-index: 1;
+    margin-top: 55px;
 }
 
 .belt-item {

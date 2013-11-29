@@ -10,16 +10,23 @@
 
   <! --  Spacer here does not break flow of page. Therefore it can space vertically for us-->
   <div id="belt-vert-spacer">
-    <div id="belt-vert-spacer-colorfill"></div>
-    <div id="belt-button-left" ng-click="beltButtonLeftHandler()">Left Button</div>
-    <div id="belt-button-right" ng-click="beltButtonRightHandler()">Right Button</div>
-      <div id="belt-wrapper">
-        <div class="belt-item" ng-repeat="movie in moviesEnglish" ng-click="beltSelectHandler(movie)">
-          <img src="{{movie.meta.imgPath}}"/>
-          <p class="belt-title">{{movie.meta.title}}</p>
-          <p class="belt-year">{{movie.meta.year}}</p>
-        </div>
+    <div id="belt-vert-spacer-colorfill">
+
+    </div>
+    <div id="belt-button-left-wrapper" class="belt-button-wrapper" ng-click="beltButtonLeftHandler()">
+      <div id="belt-button-left" class="belt-button"></div>
+    </div>
+    <div id="belt-button-right-wrapper" class="belt-button-wrapper" ng-click="beltButtonRightHandler()">
+      <div id="belt-button-right" class="belt-button"></div>
+    </div>
+
+    <div id="belt-wrapper">
+      <div class="belt-item" ng-repeat="movie in moviesEnglish" ng-click="beltSelectHandler(movie)">
+        <img src="{{movie.meta.imgPath}}"/>
+        <p class="belt-title">{{movie.meta.title}}</p>
+        <p class="belt-year">{{movie.meta.year}}</p>
       </div>
+    </div>
   </div>
 
 
