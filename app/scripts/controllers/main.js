@@ -48,6 +48,8 @@ angular.module('leslieApp')
 
     */
 
+
+    // for now...just push movies from client side. To be in database later
     var moviesEnglish = new MovieCollection();
     moviesEnglish.addMovie(
       'Days of Being Wild',
@@ -165,7 +167,7 @@ angular.module('leslieApp')
       }
     });
 
-    // using jQuery click handler is NOT the angular way...
+    // using jQuery click handler is NOT the angular way...as it it outside of Angular engine
     $scope.beltButtonLeftHandler = function() {
       if ($scope.beltInMotion) {
         return;
