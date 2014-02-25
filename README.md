@@ -9,9 +9,9 @@ See working demo:
 http://theodoreli.github.io/filmographyGHP
 
 Things to do:
-*Click on movie images
-*Click on left or right arrows on conveyer belt
-*If you resize the window small enough, we get to see the 'scrollSpy' in action. This essentially is a portion of the navigation that reacts to how far the user has scrolled down the page
+* Click on movie images
+* Click on left or right arrows on conveyer belt
+* If you resize the window small enough, we get to see the 'scrollSpy' in action. This essentially is a portion of the navigation that reacts to how far the user has scrolled down the page
 
 Not complete yet by any means, a major work in progress. 
 
