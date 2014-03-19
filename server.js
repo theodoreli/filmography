@@ -43,6 +43,7 @@ app.configure('production', function(){
 
 // Routes
 app.get('/api/awesomeThings', api.awesomeThings);
+app.get('/api/movies', api.movies);
 
 // Start server
 var port = process.env.PORT || 3000;
