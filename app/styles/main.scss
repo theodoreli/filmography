@@ -99,15 +99,20 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     height: 30px;
     #movie-nav-bar {
         height: 30px;
-
+        // for opacity trans: http://bavotasan.com/2011/a-simple-fade-with-css3/
         opacity: 1;
         transition: opacity 1s ease-in-out;
         -moz-transition: opacity 1s ease-in-out;
         -webkit-transition: opacity 1s ease-in-out;
+        border-bottom: 1px solid black;
+        .nav li {
+            display: inline-block;
+        }
     }
 }
 
 @media screen and (min-width: 768px) {
+    //we need to specify the wrapper again to satisfy CSS selector weight rules
     #movie-nav-bar-wrapper {
         #movie-nav-bar {
             opacity: 0;
@@ -115,17 +120,18 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     }
 }
 
-
-#movie-nav-bar .nav li {
-    display: inline-block;
-}
-
 #movie-nav-bar.affix-top {
 }
 
 #movie-nav-bar.affix {
-    position: fixed;
     top: 0px;
+    background-color: white;
+    z-index: 2;
+    // left is necessary to specify left relative to viewport. 
+    left: 0px;
+    margin-left: 15px; //15px to offset Bootstrap container padding
+    // margin-right: 15px; // this does nothing. *Need to find solution to this prblm
+    width: 100%;
 }
 
 
