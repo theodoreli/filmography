@@ -1,10 +1,12 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$belt-item-height: 250px;
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+
 // THEOS code
 #belt-vert-spacer {
-    height: 275px;
+    height: $belt-item-height;
     overflow-x: scroll;
 }
 
@@ -12,7 +14,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     background-color: grey;
     width: 100%;
     position: absolute;
-    height: 275px;
+    height: $belt-item-height;
     left: 0;
     z-index: -1;
 }
@@ -77,9 +79,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     display: inline-block;
     vertical-align: top;
     width: 115px;
+    height: $belt-item-height;
+    transition: background .75s ease-in;
     img {
         height: 175px;
         width: 115px;
+    }
+    &:hover {
+        background-color: gainsboro;
     }
 }
 
