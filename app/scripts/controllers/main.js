@@ -3,12 +3,11 @@
 angular.module('leslieApp')
   .controller('MainCtrl', function ($scope, $http) {
 
-    var moviesEnglish = {};
     $http.get('/api/movies').success(function(data) {
-      moviesEnglish.collection = data;
-      $scope.currentBelt = moviesEnglish.collection[0];
-      $scope.moviesEnglish = moviesEnglish.collection;
+      // database should have all this info sorted by date already
       console.log(data);
+      $scope.moviesEnglish = data;
+      $scope.currentBelt = data[0];
     });
 
     $scope.beltInMotion = false;

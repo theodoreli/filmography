@@ -1,9 +1,8 @@
 <div ng-controller="MainCtrl">
   <div class="header">
     <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Songs</a></li>
-      <li><a href="#">Concerts</a></li>
+      <li class="active"><a href="#">Movies</a></li>
+      <li><a href="#">Dead Link</a></li>
     </ul>
     <h3 class="text-muted">Leslie Cheung Movies</h3>
   </div>
@@ -22,31 +21,32 @@
 
     <div id="belt-wrapper">
       <div class="belt-item" ng-repeat="movie in moviesEnglish" ng-click="beltSelectHandler(movie)">
-        <img src="{{movie.meta.imgPath}}">
-        <p class="belt-title">{{movie.meta.title}}</p>
-        <p class="belt-year">{{movie.meta.year}}</p>
+        <img src="{{movie.imgPath}}">
+        <p class="belt-title">{{movie.title}}</p>
+        <p class="belt-year">{{movie.year}}</p>
       </div>
     </div>
   </div>
 
-
-  <div id="movie-nav-bar" class="nav navbar navbar-default" scroll-spy="">
-    <ul class="nav navbar-nav">
-      <li spy="synopsis">Synopsis</li>
-      <li spy="actors">Actors</li>
-      <li spy="awards">Awards</li>
-    </ul>
+  <div id="movie-nav-bar-wrapper">
+    <div id="movie-nav-bar" class="nav" scroll-spy="">
+      <ul class="nav">
+        <li spy="synopsis">Synopsis</li>
+        <li spy="actors">Actors</li>
+        <li spy="awards">Awards</li>
+      </ul>
+    </div>
   </div>
 
-  <div id="movie-details-wrapper">
+  <div id="movie-details-wrapper" class="row">
     <!-- Synopsis -->
-    <div id="synopsis">
+    <div id="synopsis" class="col-sm-4">
       <h3>Synopsis</h3>
       {{currentBelt.synop}}
     </div>
 
     <!-- Actors -->
-    <div id="actors">
+    <div id="actors" class="col-sm-4">
       <h3>Actors</h3>
       <ul>
         <li ng-repeat="actor in currentBelt.actors">
@@ -56,22 +56,25 @@
     </div>
 
     <!-- Awards -->
-    <div id="awards">
+    <div id="awards" class="col-sm-4">
       <h3>Awards</h3>
       <!-- For parent divs of nested ng-repeats, use div instead of p -->
-        <div ng-repeat="(year, yearDetails) in currentBelt.awards">
-          <p>{{year}}</p>
-          <div ng-repeat="(awardingBody, awards) in yearDetails">
-            {{awardingBody}}
+        <div ng-repeat="award in currentBelt.awards">
+          <p>{{award.year}}</p>
+          <div ng-repeat="awardBody in award.awardBody">
+            {{awardBody.awardBodyName}}
             <ul>
-              <li ng-repeat="award in awards">
-                {{award}}
+              <li ng-repeat="awardName in awardBody.awardNames">
+                {{awardName}}
               </li>
             </ul>
           </div>
         </div>
     </div>
+
+
   </div>
+  <!--  //#movie-details-wrapper -->
 
   <div class="footer">
     <p>Leslie The King</p>
