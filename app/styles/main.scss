@@ -8,6 +8,7 @@ $belt-item-height: 250px;
 #belt-vert-spacer {
     height: $belt-item-height;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 #belt-vert-spacer-colorfill {
