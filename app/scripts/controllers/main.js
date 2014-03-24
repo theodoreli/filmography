@@ -11,7 +11,6 @@ angular.module('leslieApp')
     });
 
     $scope.beltInMotion = false;
-    //$scope.currentBelt = 1; // this needs to be considered later with proper DB design
 
     $scope.beltSelectHandler = function(e) {
       console.log(e);
@@ -33,7 +32,7 @@ angular.module('leslieApp')
       }
       $scope.beltInMotion = true;
       $('#belt-wrapper').animate({
-        left: ['-=250', 'swing']
+        left: ['+=250', 'swing']
       }, 1000, function() {
         $scope.beltInMotion = false
         console.log('Left animation complete');
@@ -46,7 +45,7 @@ angular.module('leslieApp')
       }
       $scope.beltInMotion = true;
       $('#belt-wrapper').animate({
-        left: ['+=250', 'swing']
+        left: ['-=250', 'swing']
       }, 1000, function() {
         $scope.beltInMotion = false
         console.log('Right animation complete');
