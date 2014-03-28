@@ -1,0 +1,194 @@
+[
+    {
+        "imgPath": "images/inception.jpg",
+        "title": "Inception",
+        "year": 2010,
+        "synop": "Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable. Cobb's rare ability has made him a coveted player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved. Now Cobb is being offered a chance at redemption. One last job could give him his life back but only if he can accomplish the impossible-inception. Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse: their task is not to steal an idea but to plant one. If they succeed, it could be the perfect crime. But no amount of careful planning or expertise can prepare the team for the dangerous enemy that seems to predict their every move. An enemy that only Cobb could have seen coming.",
+        "actors": [
+            "Joseph Gordon-Levitt",
+            "Ellen Page",
+            "Tom Hardy",
+            "Ken Watanabe"
+        ],
+        "awards": [
+            {
+                "year": 2011,
+                "awardBody": [
+                    {
+                        "awardBodyName": "Academy Awards",
+                        "awardNames": [
+                            "Best Achievement in Visual Effects",
+                            "Best Achievement in Sound Editing",
+                            "Best Achievement in Sound Mixing",
+                            "Best Art Direction",
+                            "Best Achievement in Cinematography"
+                        ]
+                    },
+                    {
+                        "awardBodyName": "BAFTA Awards",
+                        "awardNames" : [
+                            "Best Production Design",
+                            "Best Sound",
+                            "Best Special Visual Effects"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "imgPath": "images/django-unchained.jpg",
+        "title": "Django Unchained",
+        "year": 2012,
+        "synop": "Former dentist, Dr. King Schultz, buys the freedom of a slave, Django, and trains him with the intent to make him his deputy bounty hunter. Instead, he is led to the site of Django's wife who is under the hands of Calvin Candie, a ruthless plantation owner.",
+        "actors": [
+            "Jamie Foxx",
+            "Christoph Waltz",
+            "Kerry Washington",
+            "Samuel L. Jackson"
+        ],
+        "awards": [
+            {
+                "year": 2013,
+                "awardBody": [
+                    {
+                        "awardBodyName": "Golden Globe",
+                        "awardNames": [
+                            "Best Screenplay",
+                            "Best Supporting Actor (Christopher Waltz)"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "imgPath": "images/shutter-island.jpg",
+        "title": "Shutter Island",
+        "year": 2010,
+        "synop": "It's 1954, and up-and-coming U.S. marshal Teddy Daniels is assigned to investigate the disappearance of a patient from Boston's Shutter Island Ashecliffe Hospital. He's been pushing for an assignment on the island for personal reasons, but before long he wonders whether he hasn't been brought there as part of a twisted plot by hospital doctors whose radical treatments range from unethical to illegal to downright sinister. Teddy's shrewd investigating skills soon provide a promising lead, but the hospital refuses him access to records he suspects would break the case wide open. As a hurricane cuts off communication with the mainland, more dangerous criminals 'escape' in the confusion, and the puzzling, improbable clues multiply, Teddy begins to doubt everything - his memory, his partner, even his own sanity.",
+        "actors": [
+            "Mark Ruffalo",
+            "Ben Kingsley",
+            "Max von Sydow"
+        ],
+        "awards": [
+            {
+                "year": 2010,
+                "awardBody": [
+                    {
+                        "awardBodyName": "National Board of Review",
+                        "awardNames": [
+                            "Max von Sydow - Dante Ferretti"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "imgPath": "images/the-departed.jpg",
+        "title": "The Deparated",
+        "year": 2006,
+        "synop": "In South Boston, the state police force is waging war on Irish American organized crime. Young undercover cop Billy Costigan is assigned to infiltrate the mob syndicate run by gangland chief Frank Costello. While Billy quickly gains Costello's confidence, Colin Sullivan, a hardened young criminal who has infiltrated the state police as an informer for the syndicate is rising to a position of power in the Special Investigation Unit. Each man becomes deeply consumed by his double life, gathering information about the plans and counter-plans of the operations he has penetrated. But when it becomes clear to both the mob and the police that there's a mole in their midst, Billy and Colin are suddenly in danger of being caught and exposed to the enemy-and each must race to uncover the identity of the other man in time to save himself. But is either willing to turn on the friends and comrades they've made during their long stints undercover? ",
+        "actors": [
+            "Matt Damon",
+            "Jack Nicholson",
+            "Mark Wahlberg",
+            "Martin Sheen"
+        ],
+        "awards": [
+            {
+                "year": 2007,
+                "awardBody": [
+                    {
+                        "awardBodyName": "Oscar",
+                        "awardNames": [
+                            "Best Motion Picture of the Year",
+                            "Best Achievement in Directing",
+                            "Best Writing, Adapted Screenplay",
+                            "Best Achievement in Film Editing"
+                        ]
+                    },
+                    {
+                        "awardBodyName": "Golden Globe",
+                        "awardNames": [
+                            "Best Director - Motion Picture (Martin Scorsese)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "year": 2006,
+                "awardBody": [
+                    {
+                        "awardBodyName": "Boston Society of Film Critics Awards",
+                        "awardNames": [
+                            "Best Film",
+                            "Best Supporting Actor (Mark Wahlberg)",
+                            "Best Director (Martin Scorsese)",
+                            "Best Screenplay (William Monahan)"
+                        ]
+                    },
+                    {
+                        "awardBodyName": "Chicago Film Critics Association Awards ",
+                        "awardNames": [
+                            "Best Picture",
+                            "Best Director ",
+                            "Best Screenplay, Adapted"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "imgPath": "images/the-great-gatsby.jpg",
+        "title": "The Great Gatsby",
+        "year": 2013,
+        "synop": "An adaptation of F. Scott Fitzgerald's Long Island-set novel, where Midwesterner Nick Carraway is lured into the lavish world of his neighbor, Jay Gatsby. Soon enough, however, Carraway will see through the cracks of Gatsby's nouveau riche existence, where obsession, madness, and tragedy await.",
+        "actors": [
+            "Joel Edgerton",
+            "Elizabeth Debicki",
+            "Tobey Maguire"
+        ],
+        "awards": [
+            {
+                "year": 2014,
+                "awardBody": [
+                    {
+                        "awardBodyName": "Academy Awards",
+                        "awardNames": [
+                            "Best Achievement in Costume Design",
+                            "Best Achievement in Production Design"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "imgPath": "images/the-wolf-of-wallstreet.jpg",
+        "title": "The Wolf of Wallstreet",
+        "year": 2013,
+        "synop": "In The Wolf of Wall Street DiCaprio plays Belfort, a Long Island penny stockbroker who served 36 months in prison for defrauding investors in a massive 1990s securities scam that involved widespread corruption on Wall Street and in the corporate banking world, including shoe designer Steve Madden.",
+        "actors": [
+            "Jonah Hill",
+            "Margot Robbie",
+            "Matthew McConaughey"
+        ],
+        "awards": [
+            {
+                "year": 2014,
+                "awardBody": [
+                    {
+                        "awardBodyName": "Golden Globe",
+                        "awardNames": [
+                            "Best Performance by an Actor in a Motion Picture - Musical or Comedy (Leonardo DiCaprio)"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
