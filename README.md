@@ -2,19 +2,16 @@ filmography
 ===========
 
 Emulate Google's filmography converyer belt when googling an actor
-eg. "Leslie Cheung movies"
+eg. "Leonardo DiCaprio movies"
 
 See working demo:
 
 http://www.theodoreli.com
 
-Things to do:
+Things you can play with on site:
+* Responsive (when window is small enough, we see the 'Scroll Spy' in action. Reflects how far down the user has scrolled)
 * Click on movie images
-* Click on left or right arrows on conveyer belt
-* If you resize the window small enough, we get to see the 'scrollSpy' in action. This essentially is a portion of the navigation that reacts to how far the user has scrolled down the page
-* test responsiveness
-
-Not complete yet by any means, a major work in progress. 
+* Click on left or right arrows on conveyer belt (or mouse scroll up and down)
 
 Stack:
 * MEAN (MongoDB, Express, AngularJS, Node)
